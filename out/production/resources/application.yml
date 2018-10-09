@@ -1,0 +1,4 @@
+spring:
+  application:
+    name: Spring Dozer Sample
+    marker: I am marked

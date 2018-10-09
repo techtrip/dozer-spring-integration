@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+    <mapping map-id="widget">
+        <class-a>com.techtrip.example.dozer.model.OriginalWidget</class-a>
+        <class-b>com.techtrip.example.dozer.model.NewFangledWidget</class-b>
+        <field>
+            <a>id</a>
+            <b>identifier</b>
+        </field>
+        <field custom-converter-id="megaDateConverter" >
+            <a>creationDate</a>
+            <b>originationDate</b>
+        </field>
+    </mapping>
+
+    <!--<configuration>-->
+        <!--<custom-converters>-->
+            <!--<converter type="com.techtrip.example.dozer.converters.CustomWidgetConverter">-->
+                <!--<class-a>com.techtrip.example.dozer.model.OriginalWidget</class-a>-->
+                <!--<class-b>com.techtrip.example.dozer.model.NewFangledWidget</class-b>-->
+            <!--</converter>-->
+        <!--</custom-converters>-->
+    <!--</configuration>-->
+
+</mappings>
